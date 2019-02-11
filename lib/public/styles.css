@@ -1,0 +1,8 @@
+body {font: 1.2em "Fira Sans", sans-serif;}
+a {color: #000;}
+.sender {float: right;text-align: right;}
+.recipient {float: left;margin-top: 70px;}
+.letter {clear: both;}
+.centre {text-align: center;}
+.column {width: 32%;display: inline-block;}
+.margin {margin: 1em 0;}

@@ -1,0 +1,150 @@
+<style>
+<%=css_styles%>
+</style>
+
+<div class="sender">
+  <strong>Leasehold and Right To Buy Services</strong> <br>
+  Hackney Service Centre <br>
+  1 Hillman Street <br>
+  London E8 1DY
+  <br> <br>
+  020 8356 2299 <br>
+  <a href="mailto:service.charges@hackney.gov.uk">
+    service.charges@hackney.gov.uk
+  </a> <br> <br>
+  Date: <%= @date %>
+  <br>
+  Your Ref: <%= @payment_ref %>
+</div>
+
+<div class="recipient">
+  <%= @lessee_full_name %> <br>
+  <%= @correspondence_address_1 %> <br>
+  <%= @correspondence_address_2 %> <br>
+  <%= @correspondence_address_3 %> <br>
+  <%= @correspondence_postcode %> <br>
+</div>
+
+<div class="letter">
+  <p>Dear <%= @lessee_short_name%>,</p>
+  <h3>RE: NOTICE OF SERVICE CHARGE ARREARS</h3>
+  <p>
+    Property Address: <strong><%= @property_address %></strong> <br>
+    Arrears of Service Charge: <strong><%= @total_collectable_arrears_balance %></strong>
+  </p>
+  <p>
+    Our records show that the sum of <strong><%= @total_collectable_arrears_balance %></strong>
+    is still outstanding on your Service Charge account.
+  </p>
+  <p>
+    It is important that your accounts are kept up to date as non-payment of your
+    service charge is a breach of your lease agreement with Hackney Council.
+  </p>
+  <p>
+    If you are unable to settle your account in full and would like to discuss your arrears
+    or to arrange an instalment plan, please contact our Leasehold Services team on
+    020 8356 2299. Government assistance maybe available towards payment of your
+    service charges if you qualify. Alternatively, if you are experiencing financial
+    difficulties, please contact your local Citizen Advice Bureau or contact us to discuss
+    any assistance we may be able to offer.
+  </p>
+  <p>
+    Please find enclosed further information on methods of payment.
+  </p>
+  <p>
+    If you have already made a payment or entered into an arrangement to pay the
+    balance, please disregard this letter.
+  </p>
+  <p>
+    We look forward to receiving your payment within
+    <strong>14 days from the date of this letter</strong>.
+  </p>
+  <p>
+    Yours sincerely, <br>
+    <strong>Income & Dispute Resolution Team Leader</strong>
+  </p>
+</div>
+
+<div class="letter">
+  <p class="centre"><strong>PAYMENT OPTIONS</strong></p>
+  <p><strong>BY BANK TRANSFER</strong></p>
+  <div class="column">
+    Bank Account: <strong>00634021</strong>
+  </div>
+  <div class="column">
+    Sort Code: <strong>30-00-02</strong>
+  </div>
+  <div class="column">
+    Payment Ref: <strong><%= @payment_ref %></strong>
+  </div>
+  <p><strong>BY DIRECT DEBIT</strong></p>
+  <p>
+    This is one of the easiest ways to pay. You can obtain a form by calling us on 020
+    8356 2299, or by printing a copy from www.hackney.gov.uk/housing-payments.
+    Please specify which of our three collection dates (3rd, 15th or 23rd) you would
+    like us to collect the monies from your account
+  </p>
+  <p><strong>BY PHONE & ONLINE</strong></p>
+  <p>
+    To pay over the phone or online, please have your Payment Reference number and
+    your debit/credit card ready as you will need these to make payment.
+  <ul>
+    <li>
+      Call the Leasehold and Right to Buy Recovery Team on 020 8356 2299
+      between 9:00am and 5:00pm Monday to Friday.
+    </li>
+    <li>
+      Call our automated line on 020 8356 5050 or use our online service at
+      www.hackney.gov.uk/f-online-payments.html
+    </li>
+  </ul>
+  </p>
+  <p><strong>IN PERSON</strong></p>
+  <p>
+    Payments can also be made in person at the
+    <strong>
+      Self-Service Payment Centre, 2
+      Hillman Street, London E8 1FB
+    </strong>
+    from Monday to Friday between 9.00am to 5:00pm
+  </p>
+  <hr>
+  <p class="centre"><strong>ADVICE AND SUPPORT</strong></p>
+  <ul>
+    <li>
+      <strong>National Debtline – Provides free debt advice</strong>
+    </li>
+    <div class="margin">
+      <div class="column">Tel: 0808 808 4000</div>
+      <div class="column">
+        Website: <a href="www.nationaldebtline.org">www.nationaldebtline.org</a>
+      </div>
+    </div>
+    <li>
+      <strong>
+        Citizens Advice Bureau – Provides free independent and confidential
+        advice on legal, financial and other matters.
+      </strong>
+    </li>
+    <div class="margin">
+      <div class="column">Tel: 0844 499 1195</div>
+      <div class="column">
+        Website: <a href="www.citizensadvice.org.uk">www.citizensadvice.org.uk</a>
+      </div>
+    </div>
+    <li>
+      <strong>Stepchange – Provides free debt advice</strong>
+    </li>
+    <div class="margin">
+      <div class="column">Tel: 0800 138 1111</div>
+      <div class="column">
+        Website: <a href="www.stepchange.org">www.stepchange.org</a>
+      </div>
+    </div>
+  </ul>
+  <p>
+    Details of other agencies can be found via the website
+    <a href="www.gov.uk">www.gov.uk</a>
+    or call our Recovery Team on 020 8356 2299.
+  </p>
+</div>
