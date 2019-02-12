@@ -12,29 +12,29 @@
   <a href="mailto:service.charges@hackney.gov.uk">
     service.charges@hackney.gov.uk
   </a> <br> <br>
-  Date: <%= @date %>
+  Date: <%= date %>
   <br>
-  Your Ref: <%= @payment_ref %>
+  Your Ref: <%= payment_ref %>
 </div>
 
 <div class="recipient">
-  <%= @lessee_full_name %> <br>
-  <%= @correspondence_address_1 %> <br>
-  <%= @correspondence_address_2 %> <br>
-  <%= @correspondence_address_3 %> <br>
-  <%= @correspondence_postcode %> <br>
+  <%= lessee_full_name %> <br>
+  <%= correspondence_address_1 %> <br>
+  <%= correspondence_address_2 %> <br>
+  <%= correspondence_address_3 %> <br>
+  <%= correspondence_postcode %> <br>
 </div>
 
 <div class="letter">
-  <p>Dear <%= @lessee_short_name%>,</p>
+  <p>Dear <%= lessee_short_name%>,</p>
   <p>
     <strong>RE: OUTSTANDING SERVICE CHARGE ARREARS</strong> <br>
-    <strong><%= @property_address %></strong>
+    <strong><%= property_address %></strong>
   </p>
   <p>
-    We write further to our previous letter of the <%= @arrears_letter_1_date %> informing you
+    We write further to our previous letter of the <%= arrears_letter_1_date %> informing you
     of the arrears on your Service Charge account in respect of the above mentioned
-    property. The amount of <%= @total_collectable_arrears_balance %>
+    property. The amount of £<%= total_collectable_arrears_balance %>
     requested remains outstanding. Please contact us within
     <strong>7 days</strong> to inform us how you intend to pay.
   </p>
@@ -80,7 +80,7 @@
     Sort Code: <strong>30-00-02</strong>
   </div>
   <div class="column">
-    Payment Ref: <strong><%= @payment_ref %></strong>
+    Payment Ref: <strong><%= payment_ref %></strong>
   </div>
   <p><strong>BY DIRECT DEBIT</strong></p>
   <p>

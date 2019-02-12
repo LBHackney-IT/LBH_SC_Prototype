@@ -12,28 +12,28 @@
   <a href="mailto:service.charges@hackney.gov.uk">
     service.charges@hackney.gov.uk
   </a> <br> <br>
-  Date: <%= @date %>
+  Date: <%= date %>
   <br>
-  Your Ref: <%= @payment_ref %>
+  Your Ref: <%= payment_ref %>
 </div>
 
 <div class="recipient">
-  <%= @lessee_full_name %> <br>
-  <%= @correspondence_address_1 %> <br>
-  <%= @correspondence_address_2 %> <br>
-  <%= @correspondence_address_3 %> <br>
-  <%= @correspondence_postcode %> <br>
+  <%= lessee_full_name %> <br>
+  <%= correspondence_address_1 %> <br>
+  <%= correspondence_address_2 %> <br>
+  <%= correspondence_address_3 %> <br>
+  <%= correspondence_postcode %> <br>
 </div>
 
 <div class="letter">
-  <p>Dear <%= @lessee_short_name%>,</p>
+  <p>Dear <%= lessee_short_name%>,</p>
   <h3>RE: NOTICE OF SERVICE CHARGE ARREARS</h3>
   <p>
-    Property Address: <strong><%= @property_address %></strong> <br>
-    Arrears of Service Charge: <strong><%= @total_collectable_arrears_balance %></strong>
+    Property Address: <strong><%= property_address %></strong> <br>
+    Arrears of Service Charge: <strong>£<%= total_collectable_arrears_balance %></strong>
   </p>
   <p>
-    Our records show that the sum of <strong><%= @total_collectable_arrears_balance %></strong>
+    Our records show that the sum of <strong>£<%= total_collectable_arrears_balance %></strong>
     is still outstanding on your Service Charge account.
   </p>
   <p>
@@ -75,7 +75,7 @@
     Sort Code: <strong>30-00-02</strong>
   </div>
   <div class="column">
-    Payment Ref: <strong><%= @payment_ref %></strong>
+    Payment Ref: <strong><%= payment_ref %></strong>
   </div>
   <p><strong>BY DIRECT DEBIT</strong></p>
   <p>
